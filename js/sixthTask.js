@@ -3,15 +3,13 @@ function getAllPropValues (array, prop) {
     // Write code under this line 
     
     let arr = [];
-for(let item in array ) { 
-    if (array[item][prop]){
-    arr.push(array[item][prop])
-    }    
-}
-return arr
-// }
-// return arr
-   
+for(let i=0; i<array.length; i++) {
+    for (let item in array[i]) {
+        console.log(array[i].item);
+        item === prop ? arr.push(array[i][prop]): "";
+    }
+    }
+    return arr
     
   }
   
